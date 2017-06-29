@@ -12,6 +12,8 @@
 		9C6BE5B01F042D6E00F360B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE5AE1F042D6E00F360B5 /* Main.storyboard */; };
 		9C6BE5B21F042D6E00F360B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE5B11F042D6E00F360B5 /* Assets.xcassets */; };
 		9C6BE5B51F042D6E00F360B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE5B31F042D6E00F360B5 /* LaunchScreen.storyboard */; };
+		F6E99FF71F056BE3006505AD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E99FF61F056BE3006505AD /* Item.swift */; };
+		F6E99FF91F057154006505AD /* ShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E99FF81F057154006505AD /* ShoppingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9C6BE5B11F042D6E00F360B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C6BE5B41F042D6E00F360B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6BE5B61F042D6E00F360B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6E99FF61F056BE3006505AD /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F6E99FF81F057154006505AD /* ShoppingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9C6BE5B11F042D6E00F360B5 /* Assets.xcassets */,
 				9C6BE5B31F042D6E00F360B5 /* LaunchScreen.storyboard */,
 				9C6BE5B61F042D6E00F360B5 /* Info.plist */,
+				F6E99FF61F056BE3006505AD /* Item.swift */,
+				F6E99FF81F057154006505AD /* ShoppingController.swift */,
 			);
 			path = ClothingStore;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6BE5AD1F042D6D00F360B5 /* ViewController.swift in Sources */,
+				F6E99FF71F056BE3006505AD /* Item.swift in Sources */,
 				9C6BE5AB1F042D6D00F360B5 /* AppDelegate.swift in Sources */,
+				F6E99FF91F057154006505AD /* ShoppingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				9C6BE5BB1F042D6E00F360B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
