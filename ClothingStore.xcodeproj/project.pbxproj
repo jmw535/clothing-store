@@ -12,6 +12,10 @@
 		9C6BE5B01F042D6E00F360B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE5AE1F042D6E00F360B5 /* Main.storyboard */; };
 		9C6BE5B21F042D6E00F360B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE5B11F042D6E00F360B5 /* Assets.xcassets */; };
 		9C6BE5B51F042D6E00F360B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE5B31F042D6E00F360B5 /* LaunchScreen.storyboard */; };
+		9CD6CD961F054ACB009631B1 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6CD951F054ACB009631B1 /* ShopTableViewController.swift */; };
+		9CD6CD981F054AE5009631B1 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6CD971F054AE5009631B1 /* CartTableViewController.swift */; };
+		9CD6CD9A1F054AF5009631B1 /* OrderHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6CD991F054AF5009631B1 /* OrderHistoryTableViewController.swift */; };
+		9CD6CD9C1F054C22009631B1 /* ShopItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6CD9B1F054C22009631B1 /* ShopItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		9C6BE5B11F042D6E00F360B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C6BE5B41F042D6E00F360B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6BE5B61F042D6E00F360B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD6CD951F054ACB009631B1 /* ShopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
+		9CD6CD971F054AE5009631B1 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		9CD6CD991F054AF5009631B1 /* OrderHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryTableViewController.swift; sourceTree = "<group>"; };
+		9CD6CD9B1F054C22009631B1 /* ShopItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				9C6BE5AA1F042D6D00F360B5 /* AppDelegate.swift */,
 				9C6BE5AC1F042D6D00F360B5 /* ViewController.swift */,
+				9CD6CD951F054ACB009631B1 /* ShopTableViewController.swift */,
+				9CD6CD9B1F054C22009631B1 /* ShopItemDetailViewController.swift */,
+				9CD6CD971F054AE5009631B1 /* CartTableViewController.swift */,
+				9CD6CD991F054AF5009631B1 /* OrderHistoryTableViewController.swift */,
 				9C6BE5AE1F042D6E00F360B5 /* Main.storyboard */,
 				9C6BE5B11F042D6E00F360B5 /* Assets.xcassets */,
 				9C6BE5B31F042D6E00F360B5 /* LaunchScreen.storyboard */,
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD6CD9A1F054AF5009631B1 /* OrderHistoryTableViewController.swift in Sources */,
 				9C6BE5AD1F042D6D00F360B5 /* ViewController.swift in Sources */,
+				9CD6CD981F054AE5009631B1 /* CartTableViewController.swift in Sources */,
 				9C6BE5AB1F042D6D00F360B5 /* AppDelegate.swift in Sources */,
+				9CD6CD9C1F054C22009631B1 /* ShopItemDetailViewController.swift in Sources */,
+				9CD6CD961F054ACB009631B1 /* ShopTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				9C6BE5BB1F042D6E00F360B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
