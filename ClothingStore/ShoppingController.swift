@@ -23,11 +23,12 @@ func fetchCategories(completion: @escaping ([String]?) -> Void)
             completion(nil)
         }
     }
+    task.resume()
 }
 
 // GET request
 func fetchMenuItems(categoryName: String, completion: @escaping
-    ([MenuItem]?) -> Void) {
+    ([ShopItem]?) -> Void) {
     let initialMenuURL = baseURL.appendingPathComponent("menu")
     var components = URLComponents(url: initialMenuURL,
                                    resolvingAgainstBaseURL: true)!
@@ -37,19 +38,20 @@ func fetchMenuItems(categoryName: String, completion: @escaping
     // Parse server response
     let task = URLSession.shared.dataTask(with: menuURL)
     { (data, response, error) in
-        var menuItems = [MenuItem]()
+        var shopItems = [ShopItem]()
         if let data = data,
             let jsonDictionary = try?
                 JSONSerialization.jsonObject(with: data) as?
                     [String: Any],
             let menuArray = jsonDictionary?["items"] as?
                 [[String: Any]] {
-            let menuItems = menuArray.flatMap { MenuItem(json: $0) }
-            completion(menuItems)
+            let shopItems = menuArray.flatMap { ShopItem(json: $0) }
+            completion(shopItems)
         } else {
             completion(nil)
         }
     }
+    task.resume()
 }
 
 // POST request
@@ -76,6 +78,7 @@ func submitOrder(menuIds: [Int], completion: @escaping (Int?) -> Void) {
             completion(nil)
         }
     }
+    task.resume()
 }
 
 }

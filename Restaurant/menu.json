@@ -1,33 +1,33 @@
 [
   {
     "id": 1,
-    "name": "Spaghetti and Meatballs",
-    "description": "Seasoned meatballs on top of freshly-made spaghetti. Served with a robust tomato sauce.",
-    "price": 9.0,
+    "name": "Polo Shirt",
+    "description": "Slim fit, short sleeve polo shirt.",
+    "price": 29.0,
     "category": "entrees",
     "imageName": ""
   },
   {
     "id": 2,
-    "name": "Margherita Pizza",
-    "description": "Tomato sauce, fresh mozzarella, basil, and extra-virgin olive oil.",
-    "price": 10.0,
+    "name": "Lacoste Polo Shirt",
+    "description": "Bold stripes mix it up while heat-bonded finishes add a signature touch.",
+    "price": 99.0,
     "category": "entrees",
     "imageName": ""
   },
   {
     "id": 3,
-    "name": "Grilled Steelhead Trout Sandwich",
-    "description": "Pacific steelhead trout* with lettuce, tomato, and red onion.",
-    "price": 9.0,
+    "name": "Hudson Jeans",
+    "description": "The Colette is a midrise skinny jean that has stepped hem detail and a raw hem.",
+    "price": 139.0,
     "category": "entrees",
     "imageName": ""
   },
   {
     "id": 4,
-    "name": "Pesto Linguini",
-    "description": "Stewed sliced beef with yellow onions and garlic in a vinegar-soy sauce. Served with steamed jasmine rice and sautéed vegetables.",
-    "price": 9.0,
+    "name": "Floral Print Jumpsuit",
+    "description": "Suit For beach, outdoor, summer party.",
+    "price": 17.9,
     "category": "entrees",
     "imageName": ""
   },

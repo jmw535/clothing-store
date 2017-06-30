@@ -9,17 +9,29 @@
 import UIKit
 
 class ShopTableViewController: UITableViewController {
-
+    let menuController = MenuController()
+    var shopItems = [ShopItem]()
+    let category = "entrees"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        title = "Clothing"
+        menuController.fetchMenuItems(categoryName: category)
+        { (shopItems) in
+            if let shopItems = shopItems {
+                self.updateUI(with: shopItems)
+            }
+        }
     }
 
+    func updateUI(with shopItems: [ShopItem]) {
+        DispatchQueue.main.async {
+            self.shopItems = shopItems
+            self.tableView.reloadData()
+        }
+    }
+
+/*
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,22 +43,33 @@ class ShopTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
+*/
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        print(shopItems.count)
+        return shopItems.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier:"MenuCellIdentifier", for: indexPath)
+        configure(cell: cell, forItemAt: indexPath)
         return cell
     }
-    */
+    
+    func configure(cell: UITableViewCell, forItemAt indexPath:IndexPath) {
+        let shopItem = shopItems[indexPath.row]
+        cell.textLabel?.text = shopItem.name
+        cell.detailTextLabel?.text = String(format: "$%.2f", shopItem.price)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShopDetailSegue" {
+            let ShopItemDetailViewController = segue.destination
+                as! ShopItemDetailViewController
+            let index = tableView.indexPathForSelectedRow!.row
+            ShopItemDetailViewController.shopItem = shopItems[index]
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
