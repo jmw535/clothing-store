@@ -2,7 +2,7 @@ import Foundation
 
 
 // Create data structure for each item in the clothing list
-struct MenuItem {
+struct ShopItem {
     var id: Int
     var name: String
     var description: String
