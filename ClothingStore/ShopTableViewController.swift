@@ -11,7 +11,7 @@ import UIKit
 class ShopTableViewController: UITableViewController {
     let menuController = MenuController()
     var shopItems = [ShopItem]()
-    let category = "entrees"
+    let category = "clothing"
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -4,7 +4,7 @@
     "name": "Men's Woven Longsleeve Shirt",
     "description": "Modern fit long sleeve shirt with micro dot pattern, front chest pocket and woven flag label.",
     "price": 39.0,
-    "category": "entrees",
+    "category": "clothing",
     "imageName": ""
   },
   {
@@ -12,7 +12,7 @@
     "name": "Men's Plaid Button Down Shirt",
     "description": "Men's long sleeve sport shirt, accented with contrast trim in a shaped fit.",
     "price": 84.0,
-    "category": "entrees",
+    "category": "clothing",
     "imageName": ""
   },
   {
@@ -20,7 +20,7 @@
     "name": "Women's Sleeveless Romper",
     "description": "Flattering detailing elevates this textured knit romper with a seamed waist and front pleats on the shorts.",
     "price": 44.0,
-    "category": "entrees",
+    "category": "clothing",
     "imageName": ""
   },
   {
@@ -28,23 +28,23 @@
     "name": "Women's Strappy Romper",
     "description": "Strappy romper with lace up front and elastic waistline.",
     "price": 225.0,
-    "category": "entrees",
+    "category": "clothing",
     "imageName": ""
   },
   {
     "id": 5,
-    "name": "Chicken Noodle Soup",
-    "description": "Delicious chicken simmered alongside yellow onions, carrots, celery, and bay leaves, chicken stock.",
-    "price": 3.0,
-    "category": "appetizers",
+    "name": "Men's Striped Button Down Shirt",
+    "description": "Classic button front shirt featuring button down collar and chest pocket.",
+    "price": 148.0,
+    "category": "clothing",
     "imageName": ""
   },
   {
     "id": 6,
-    "name": "Italian Salad",
-    "description": "Garlic, red onions, tomatoes, mushrooms, and olives on top of romaine lettuce.",
-    "price": 5.0,
-    "category": "appetizers",
+    "name": "Men's Fitted Non-Iron Dress Shirt",
+    "description": "Find your perfect fit within 72 sizes variations, including Big & Tall sizes.",
+    "price": 49.0,
+    "category": "clothing",
     "imageName": ""
   },
 ]

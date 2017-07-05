@@ -1,7 +1,7 @@
 import Foundation
 
 class MenuController {
-    let baseURL = URL(string: "http://localhost:8090/")!
+    let baseURL = URL(string: "http://localhost:8090/")! // Create local server URL
 
 
 // GET request
@@ -33,11 +33,12 @@ func fetchMenuItems(categoryName: String, completion: @escaping
                                    resolvingAgainstBaseURL: true)!
     components.queryItems = [URLQueryItem(name: "category",
                                           value: categoryName)]
-    let menuURL = components.url!
+    let menuURL = components.url! // http://localhost:8090/menu?category=entrees
+
     // Parse server response
     let task = URLSession.shared.dataTask(with: menuURL)
     { (data, response, error) in
-        //var shopItems = [ShopItem]() //?
+        //var shopItems = [ShopItem]()
         if let data = data,
             let jsonDictionary = try?
                 JSONSerialization.jsonObject(with: data) as?
