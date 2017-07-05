@@ -7,8 +7,7 @@ class MenuController {
 // GET request
 func fetchCategories(completion: @escaping ([String]?) -> Void)
 {
-    let categoryURL =
-        baseURL.appendingPathComponent("categories")
+    let categoryURL = baseURL.appendingPathComponent("categories")
     // Parse server response
     let task = URLSession.shared.dataTask(with: categoryURL)
     { (data, response, error) in
@@ -38,7 +37,7 @@ func fetchMenuItems(categoryName: String, completion: @escaping
     // Parse server response
     let task = URLSession.shared.dataTask(with: menuURL)
     { (data, response, error) in
-        var shopItems = [ShopItem]()
+        //var shopItems = [ShopItem]() //?
         if let data = data,
             let jsonDictionary = try?
                 JSONSerialization.jsonObject(with: data) as?
