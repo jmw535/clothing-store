@@ -1,33 +1,33 @@
 [
   {
     "id": 1,
-    "name": "Spaghetti and Meatballs",
-    "description": "Seasoned meatballs on top of freshly-made spaghetti. Served with a robust tomato sauce.",
-    "price": 9.0,
+    "name": "Men's Woven Longsleeve Shirt",
+    "description": "Modern fit long sleeve shirt with micro dot pattern, front chest pocket and woven flag label.",
+    "price": 39.0,
     "category": "entrees",
     "imageName": ""
   },
   {
     "id": 2,
-    "name": "Margherita Pizza",
-    "description": "Tomato sauce, fresh mozzarella, basil, and extra-virgin olive oil.",
-    "price": 10.0,
+    "name": "Men's Plaid Button Down Shirt",
+    "description": "Men's long sleeve sport shirt, accented with contrast trim in a shaped fit.",
+    "price": 84.0,
     "category": "entrees",
     "imageName": ""
   },
   {
     "id": 3,
-    "name": "Grilled Steelhead Trout Sandwich",
-    "description": "Pacific steelhead trout* with lettuce, tomato, and red onion.",
-    "price": 9.0,
+    "name": "Women's Sleeveless Romper",
+    "description": "Flattering detailing elevates this textured knit romper with a seamed waist and front pleats on the shorts.",
+    "price": 44.0,
     "category": "entrees",
     "imageName": ""
   },
   {
     "id": 4,
-    "name": "Pesto Linguini",
-    "description": "Stewed sliced beef with yellow onions and garlic in a vinegar-soy sauce. Served with steamed jasmine rice and sautéed vegetables.",
-    "price": 9.0,
+    "name": "Women's Strappy Romper",
+    "description": "Strappy romper with lace up front and elastic waistline.",
+    "price": 225.0,
     "category": "entrees",
     "imageName": ""
   },
