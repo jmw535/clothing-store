@@ -15,7 +15,6 @@ class ShopTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Clothing"
         menuController.fetchMenuItems(categoryName: category)
         { (shopItems) in
             if let shopItems = shopItems {
