@@ -58,10 +58,20 @@ class ShopTableViewController: UITableViewController {
         let shopItem = shopItems[indexPath.row]
         cell.textLabel?.text = shopItem.name
         cell.detailTextLabel?.text = String(format: "$%.2f", shopItem.price)
+        MenuController.shared.fetchImage(url: shopItem.imageURL) {
+            (image) in
+            guard let image = image else { return }
+            DispatchQueue.main.async {
+                if let currentIndexPath = self.tableView.indexPath(for: cell), currentIndexPath != indexPath {
+                    return
+                }
+                cell.imageView?.image = image
+            }
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShopDetailSegue" {
+        if segue.identifier == "ShopItemDetailSegue" {
             let ShopItemDetailViewController = segue.destination
                 as! ShopItemDetailViewController
             let index = tableView.indexPathForSelectedRow!.row

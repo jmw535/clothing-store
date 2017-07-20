@@ -1,7 +1,9 @@
 import Foundation
+import UIKit
 
 class MenuController {
     let baseURL = URL(string: "http://localhost:8090/")! // Create local server URL
+    static let shared = MenuController()
 
 
 // GET request
@@ -47,6 +49,18 @@ func fetchMenuItems(categoryName: String, completion: @escaping
                 [[String: Any]] {
             let shopItems = menuArray.flatMap { ShopItem(json: $0) }
             completion(shopItems)
+        } else {
+            completion(nil)
+        }
+    }
+    task.resume()
+}
+    
+func fetchImage(url: URL, completion: @escaping (UIImage?) -> Void) {
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        if let data = data,
+            let image = UIImage(data: data) {
+            completion(image)
         } else {
             completion(nil)
         }

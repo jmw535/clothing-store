@@ -5,7 +5,7 @@
     "description": "Modern fit long sleeve shirt with micro dot pattern, front chest pocket and woven flag label.",
     "price": 39.0,
     "category": "clothing",
-    "imageName": ""
+    "imageName": "mlongsleeve.jpeg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Men's long sleeve sport shirt, accented with contrast trim in a shaped fit.",
     "price": 84.0,
     "category": "clothing",
-    "imageName": ""
+    "imageName": "G7446_WX1201_m.jpeg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "Flattering detailing elevates this textured knit romper with a seamed waist and front pleats on the shorts.",
     "price": 44.0,
     "category": "clothing",
-    "imageName": ""
+    "imageName": "G5780_KA0290_d3.jpeg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "Strappy romper with lace up front and elastic waistline.",
     "price": 225.0,
     "category": "clothing",
-    "imageName": ""
+    "imageName": "G6217_BL8931.jpeg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Classic button front shirt featuring button down collar and chest pocket.",
     "price": 148.0,
     "category": "clothing",
-    "imageName": ""
+    "imageName": "G7449_WX0468.jpeg"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "description": "Find your perfect fit within 72 sizes variations, including Big & Tall sizes.",
     "price": 49.0,
     "category": "clothing",
-    "imageName": ""
+    "imageName": "G7369_WT0002.jpeg"
   },
 ]
